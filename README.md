@@ -1,2 +1,2 @@
 # SnowSong.Org
-SnowSong's website written in flask.  
+SnowSong's website written in Python/Django.  
