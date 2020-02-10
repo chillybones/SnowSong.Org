@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -48,6 +47,19 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+SERVER_EMAIL = 'admin@snowsong.org'
+DEFAULT_FROM_EMAIL = SERVER_EMAIL
+
+ADMINS = [
+    ('Jeremy', 'jeremy@snowsong.org')
+]
+
+MANAGERS = [
+    ('Jeremy', 'jeremy@snowsong.org')
 ]
 
 ROOT_URLCONF = 'SnowSongSite.urls'
@@ -120,3 +132,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'

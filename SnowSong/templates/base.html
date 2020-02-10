@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link href="{% static "/css/bootstrap.css" %}" rel="stylesheet"/>
+    <link href="{% static "/css/bootstrap-override.css" %}" rel="stylesheet"/>
+    <script src="{% static "/js/bootstrap.bundle.js" %}"></script>
+    <title>{% block title %} - SnowSong Labs{% endblock %}</title>
+</head>
+<body class="bg-dark">
+    <header>
+        <nav class="navbar fixed-top navbar-light bg-dark">
+            <a class="navbar-brand text-light" href="{% url 'SnowSong:index' %}">SnowSong Labs</a>
+            <a class="navbar-nav" href="index.html">Home</a>
+        </nav>
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">SnowSong Labs</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>

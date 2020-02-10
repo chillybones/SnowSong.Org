@@ -1,0 +1,51 @@
+:root {
+    --basedark: #090d11;
+    --stepdark: #48596c;
+    --baseneutral: #a1aab3;
+    --steplight: #e1e4eb;
+    --baselight: #fffffd;
+}
+
+.bg-dark {
+  background-color: #090d11 !important;
+}
+
+a.bg-dark:hover, a.bg-dark:focus,
+button.bg-dark:hover,
+button.bg-dark:focus {
+  background-color: #48596c !important;
+}
+
+.bg-light {
+  background-color: #a1aab3 !important;
+}
+
+a.bg-light:hover, a.bg-light:focus,
+button.bg-light:hover,
+button.bg-light:focus {
+  background-color: #e1e4eb !important;
+}
+
+.text-light {
+  color: #a1aab3 !important;
+}
+
+a.text-light:hover, a.text-light:focus {
+  color: #fffffd !important;
+}
+
+.text-dark {
+  color: #48596c !important;
+}
+
+a.text-dark:hover, a.text-dark:focus {
+  color: #090d11 !important;
+}
+
+.border-light {
+  border-color: #a1aab3 !important;
+}
+
+.border-dark {
+  border-color: #090d11 !important;
+}
